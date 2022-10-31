@@ -30,7 +30,6 @@ const Navbar = () => {
       overflow={'hidden'}
       zIndex={10}
       boxShadow={'lg'}
-      // boxShadow={'0px 4px 10px rgba(79, 79, 79, 0.07)'}
     >
       <Grid h="100vh" templateColumns="repeat(5, 1fr)">
         <GridItem colSpan={1}>
@@ -46,7 +45,7 @@ const Navbar = () => {
         </GridItem>
         <GridItem flexDirection="row" maxW="1098px" colSpan={4}>
           <HStack spacing={10} color="#647787">
-            <InputGroup maxW={300} mr="auto" h={9}>
+            <InputGroup ml={'60px'} maxW={300} mr="auto" h={9}>
               <InputLeftElement
                 pointerEvents="none"
                 children={<Icon as={BsSearch} mr="16px" color="gray.300" />}
