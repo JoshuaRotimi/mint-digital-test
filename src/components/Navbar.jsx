@@ -22,7 +22,16 @@ import userImg from '../assets/user1.png';
 
 const Navbar = () => {
   return (
-    <Box w="full" bg="#FFFFFF" boxShadow="lg" h="60px" py="15px">
+    <Box
+      w="full"
+      bg="#FFFFFF"
+      h="60px"
+      py="15px"
+      overflow={'hidden'}
+      zIndex={10}
+      boxShadow={'lg'}
+      // boxShadow={'0px 4px 10px rgba(79, 79, 79, 0.07)'}
+    >
       <Grid h="100vh" templateColumns="repeat(5, 1fr)">
         <GridItem colSpan={1}>
           <Heading
@@ -49,6 +58,7 @@ const Navbar = () => {
                 }}
                 type="search"
                 placeholder="Search..."
+                _placeholder={{ color: '#979797' }}
                 color={'#979797'}
               />
             </InputGroup>

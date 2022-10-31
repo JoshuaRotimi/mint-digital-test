@@ -3,6 +3,7 @@ import { Flex, Grid, GridItem, HStack, Text } from '@chakra-ui/react';
 import DailyVolume from './DailyVolume';
 import DataKey from './DataKey';
 import Chart from './Chart';
+import PaymentTable from './PaymentTable';
 
 const Dashboard = () => {
   return (
@@ -63,6 +64,10 @@ const Dashboard = () => {
             </DataKey>
           </GridItem>
         </Grid>
+      </Flex>
+
+      <Flex py={'30px'} w={'90%'} mx={'auto'}>
+        <PaymentTable />
       </Flex>
     </Flex>
   );

@@ -7,7 +7,7 @@ import Dashboard from '../components/Dashboard';
 const Home = () => {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <Flex>
         <Sidebar />
         <Dashboard />

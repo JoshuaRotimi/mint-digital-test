@@ -4,7 +4,15 @@ import { SidebarDetails } from '../utils/sidebarOptions';
 
 const Sidebar = () => {
   return (
-    <VStack w={'25%'} pt="33px">
+    <VStack
+      w={'25%'}
+      h={'100vh'}
+      pt="33px"
+      bg={'#fff'}
+      position={'sticky'}
+      top={0}
+      left={0}
+    >
       <Button
         w="163px"
         bg="#27AE60"
@@ -32,6 +40,7 @@ const Sidebar = () => {
               h="36px"
               alignItems="center"
               display="flex"
+              cursor={'pointer'}
               _hover={{
                 background: '#1875F0',
                 opacity: 0.1,
